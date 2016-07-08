@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/title"
+        android:background="@drawable/lan_bar"
+        android:gravity="center_vertical"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商户注册"
+            android:textSize="20dp"
+            android:textColor="#0b0b0b"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+        <TextView
+            android:id="@+id/zhuce_reback_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="2/2"
+            android:textSize="18dp"
+            android:textColor="#060606"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout><RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="119dp"
+    android:id="@+id/title1"
+    android:background="@drawable/lan_bar"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/touxian"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击设置头像"
+        android:textColor="#000"
+        android:id="@+id/textView3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人加盟申请"
+        android:textSize="25dp"
+        android:textColor="#ece40c"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/textView4" />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/title3"
+        android:background="@drawable/lan_bar"
+        android:gravity="center_vertical"  >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:id="@+id/title21"
+        android:background="@drawable/lan_bar"
+        android:gravity="center_vertical"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请填写以下资料"
+            android:textSize="20dp"
+            android:textColor="#f4ec0b"
+            android:id="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:fillViewport="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/xm_bottom2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.09">
+            <TextView
+                android:id="@+id/btn_send2"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="right"
+                android:paddingTop="9dp"
+                android:paddingLeft="7dp"
+                android:textColor="#000"
+                android:text="姓  名："
+                android:layout_alignTop="@+id/et_sendmessage2"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/et_sendmessage2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/login_edit_normal"
+                android:singleLine="true"
+                android:hint="请输入你的姓名"
+                android:textSize="14dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/btn_send2" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/sf_bottom2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/btn_send3"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="right"
+                android:paddingTop="9dp"
+                android:paddingLeft="7dp"
+                android:textColor="#000"
+                android:text="身份证号："
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/et_sendmessage3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/login_edit_normal"
+                android:singleLine="true"
+                android:hint="请输入18位身份证号(x用*代替)"
+                android:textSize="14dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/btn_send3" />
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/xb_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send4"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="性别："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send4" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="先生"
+                    android:id="@+id/radioButton"
+                    android:layout_alignBottom="@+id/et_sendmessage4"
+                    android:layout_centerHorizontal="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女士"
+                    android:id="@+id/radioButton2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignEnd="@+id/et_sendmessage4"
+                    android:layout_marginEnd="31dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/dz_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send5"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="常住地址："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="请输入你的常住址"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send5" />
+
+            </RelativeLayout>
+            <RelativeLayout
+            android:id="@+id/nl_bottom2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/btn_send6"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="right"
+                android:paddingTop="9dp"
+                android:paddingLeft="7dp"
+                android:textColor="#000"
+                android:text="年龄："
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/et_sendmessage6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/login_edit_normal"
+                android:singleLine="true"
+                android:hint="请输入你的年龄"
+                android:textSize="14dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/btn_send6" />
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gl_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send7"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="工龄："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="请填写月份"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send7" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/yh_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send8"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="开户银行："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage8"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="持卡人必须为申请人"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send8" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/yhh_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send9"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="银行卡号："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="请输入你的卡号"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send9" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/zfb_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send1"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="支付宝："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="支付宝账号"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send1" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sqxm_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="203dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_sendxm"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="申请项目："
+                    android:layout_centerVertical="true" />
+
+                <EditText
+                    android:id="@+id/scxm_sendmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:layout_toEndOf="@+id/btn_sendxm" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="顺风车"
+                    android:id="@+id/checkBox"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/scxm_sendmessage"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家政服务"
+                    android:id="@+id/checkBox2"
+                    android:checked="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignEnd="@+id/scxm_sendmessage"
+                    android:layout_marginEnd="18dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="擦玻璃"
+                    android:id="@+id/checkBox3"
+                    android:layout_below="@+id/checkBox2"
+                    android:layout_toEndOf="@+id/btn_sendxm"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上门保洁"
+                    android:id="@+id/checkBox4"
+                    android:layout_below="@+id/checkBox2"
+                    android:layout_alignStart="@+id/checkBox2"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="钟点工"
+                    android:id="@+id/checkBox5"
+                    android:layout_below="@+id/checkBox3"
+                    android:layout_toEndOf="@+id/btn_sendxm"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取件"
+                    android:id="@+id/checkBox6"
+                    android:layout_alignBottom="@+id/checkBox5"
+                    android:layout_alignStart="@+id/checkBox4"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="送煤气"
+                    android:id="@+id/checkBox7"
+                    android:layout_below="@+id/checkBox5"
+                    android:layout_alignStart="@+id/scxm_sendmessage"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上门洗车"
+                    android:id="@+id/checkBox8"
+                    android:layout_alignBottom="@+id/checkBox7"
+                    android:layout_alignStart="@+id/checkBox6"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="维修技工"
+                    android:id="@+id/checkBox9"
+                    android:layout_below="@+id/checkBox7"
+                    android:layout_alignStart="@+id/scxm_sendmessage"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自来水维修"
+                    android:id="@+id/checkBox10"
+                    android:layout_alignBottom="@+id/checkBox9"
+                    android:layout_alignStart="@+id/checkBox8"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暖气改/修"
+                    android:id="@+id/checkBox11"
+                    android:layout_below="@+id/checkBox9"
+                    android:layout_alignStart="@+id/scxm_sendmessage"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报名缴费"
+                    android:id="@+id/checkBox12"
+                    android:layout_alignBottom="@+id/checkBox11"
+                    android:layout_alignStart="@+id/checkBox10"
+                    android:checked="false" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>
