@@ -343,7 +343,8 @@
                 android:id="@+id/sqxm_bottom2"
                 android:layout_width="match_parent"
                 android:layout_height="134dp"
-                android:layout_alignParentBottom="true">
+                android:layout_alignParentBottom="true"
+                android:paddingTop="9dp">
                 <ImageView
                     android:id="@+id/btn_sendxm"
                     android:layout_width="120dp"
@@ -370,8 +371,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/imageView2"
                     android:src="@drawable/touxian"
-                    android:layout_centerVertical="true"
-                    android:layout_alignEnd="@+id/scxm_sendmessage"
+                    android:layout_alignParentTop="true"
                     android:layout_toEndOf="@+id/btn_sendxm" />
 
             </RelativeLayout>
@@ -382,8 +382,8 @@
                 android:layout_alignParentBottom="true">
                 <TextView
                     android:id="@+id/btn_send6"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp"
                     android:gravity="right"
                     android:paddingTop="9dp"
                     android:textColor="#000"
