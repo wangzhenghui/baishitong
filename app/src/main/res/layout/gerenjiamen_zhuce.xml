@@ -29,7 +29,8 @@
             android:textColor="#060606"
             android:layout_alignBottom="@+id/textView"
             android:layout_alignParentEnd="true" />
-    </RelativeLayout><RelativeLayout
+    </RelativeLayout>
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="119dp"
     android:id="@+id/title1"
@@ -523,6 +524,19 @@
                     android:checked="false" />
 
             </RelativeLayout>
+            <Button
+                android:id="@+id/main_denglu_btn"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/btn_style_green"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="提交"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:onClick="welcome_gerentijiao" />
         </LinearLayout>
         </ScrollView>
 

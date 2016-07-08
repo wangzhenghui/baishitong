@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/title"
+        android:background="@drawable/lan_bar"
+        android:gravity="center_vertical"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商户注册"
+            android:textSize="20dp"
+            android:textColor="#0b0b0b"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+        <TextView
+            android:id="@+id/zhuce_reback_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="2/2"
+            android:textSize="18dp"
+            android:textColor="#060606"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:id="@+id/title1"
+        android:background="@drawable/lan_bar"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/touxian"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公司加盟申请"
+            android:textSize="25dp"
+            android:textColor="#ece40c"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/title3"
+        android:background="@drawable/lan_bar"
+        android:gravity="center_vertical"  >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:id="@+id/title21"
+        android:background="@drawable/lan_bar"
+        android:gravity="center_vertical"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请填写以下资料"
+            android:textSize="20dp"
+            android:textColor="#f4ec0b"
+            android:id="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:fillViewport="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/xm_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0.09">
+                <TextView
+                    android:id="@+id/btn_send2"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="公司名称："
+                    android:layout_alignTop="@+id/et_sendmessage2"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="请输入公司名称"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send2" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sf_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send3"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="联系电话："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="手机号码或固定电话"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send3" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/xb_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send4"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="公司地址："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="公司地址"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send4" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/dz_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send5"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="负责人："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="请输入公司负责人"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send5" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/yh_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send8"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="开户银行："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage8"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="持卡人必须为申请人"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send8" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/yhh_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send9"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="银行卡号："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="请输入你的卡号"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send9" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zfb_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send1"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="支付宝："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage0"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="支付宝账号"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send1" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/zzhm_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send0"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#000"
+                    android:text="执照号码："
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="执照号或信用码"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sqxm_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="134dp"
+                android:layout_alignParentBottom="true">
+                <ImageView
+                    android:id="@+id/btn_sendxm"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="7dp"
+                    android:src="@drawable/xiangji"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="43dp" />
+
+                <EditText
+                    android:id="@+id/scxm_sendmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:layout_toEndOf="@+id/btn_sendxm" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/touxian"
+                    android:layout_centerVertical="true"
+                    android:layout_alignEnd="@+id/scxm_sendmessage"
+                    android:layout_toEndOf="@+id/btn_sendxm" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fzrsj_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send6"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:textColor="#000"
+                    android:text="负责人手机号码："
+                    android:layout_alignTop="@+id/et_sendmessage6"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="此号码将作为登录账号"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send6" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/yzm_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/btn_send7"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:gravity="right"
+                    android:paddingTop="9dp"
+                    android:textColor="#000"
+                    android:text="验证码："
+                    android:layout_alignTop="@+id/et_sendmessage7"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_edit_normal"
+                    android:singleLine="true"
+                    android:hint="输入验证码"
+                    android:textSize="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/btn_send7" />
+                <Button
+                    android:id="@+id/btn_yh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="免费获取验证码"
+                    android:background="@drawable/chat_send_btn"
+                    android:layout_alignTop="@+id/et_sendmessage7"
+                    android:layout_alignEnd="@+id/et_sendmessage7"/>
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/main_denglu_btn"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/btn_style_green"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="提交"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:onClick="welcome_gongsitijiao" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

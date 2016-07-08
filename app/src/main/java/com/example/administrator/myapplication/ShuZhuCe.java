@@ -20,6 +20,8 @@ public class ShuZhuCe extends Activity {
         startActivity(intent);
     }
     public void welcome_gongsi(View view){//公司加盟
-
+        Intent intent = new Intent();
+        intent.setClass(ShuZhuCe.this,GongSiJiaMen.class);
+        startActivity(intent);
     }
 }

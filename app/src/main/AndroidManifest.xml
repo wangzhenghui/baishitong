@@ -18,6 +18,7 @@
         <activity android:name=".ShuZhuCe"/>
         <activity android:name=".GeRenJiaMen"/>
         <activity android:name=".YongHuZhuCe"/>
+        <activity android:name=".GongSiJiaMen"/>
     </application>
 
 </manifest>
