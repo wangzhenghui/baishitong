@@ -26,14 +26,21 @@
 
 
     </RelativeLayout>
-
-    <RelativeLayout
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:fillViewport="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/title1"
         android:background="@drawable/lan_bar"
-        android:gravity="center_vertical"
-        android:layout_weight="0.21">
+        android:gravity="center_vertical">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -41,8 +48,8 @@
                 android:layout_height="wrap_content"
                 android:scaleType="matrix"
                 android:src="@drawable/touxian"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true" />
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textView3" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -61,11 +68,13 @@
         android:id="@+id/title3"
         android:background="@drawable/lan_bar"
         android:gravity="center_vertical"  >
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
         </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider"
+        android:layout_alignParentTop="true"
+        />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="39dp"
@@ -88,9 +97,8 @@
     <RelativeLayout
         android:id="@+id/nc_bottom2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_weight="0.09">
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
         <TextView
             android:id="@+id/btn_send2"
             android:layout_width="120dp"
@@ -119,9 +127,8 @@
     <RelativeLayout
         android:id="@+id/zsxm_bottom2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_weight="0.05">
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
         <TextView
             android:id="@+id/btn_send3"
             android:layout_width="120dp"
@@ -151,9 +158,8 @@
     <RelativeLayout
         android:id="@+id/dz_bottom2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_weight="0.05">
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
         <TextView
             android:id="@+id/btn_send4"
             android:layout_width="120dp"
@@ -182,9 +188,8 @@
     <RelativeLayout
         android:id="@+id/dhm_bottom2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_weight="0.05">
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
         <TextView
             android:id="@+id/btn_send5"
             android:layout_width="120dp"
@@ -213,9 +218,8 @@
     <RelativeLayout
         android:id="@+id/yzm_bottom2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_weight="0.05">
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
         <TextView
             android:id="@+id/btn_send6"
             android:layout_width="120dp"
@@ -228,28 +232,33 @@
             android:layout_alignTop="@+id/et_sendmessage6"
             android:layout_alignParentStart="true" />
 
-        <TextView
+        <EditText
             android:id="@+id/et_sendmessage6"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/login_edit_normal"
             android:singleLine="true"
-            android:text="免费获取验证码"
-            android:textColor="#000000"
             android:textSize="14dp"
+            android:hint="输入验证码"
             android:layout_centerVertical="true"
-            android:gravity="right"
             android:layout_toEndOf="@+id/btn_send6" />
+        <Button
+            android:id="@+id/btn_yh"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="获取验证码"
+            android:background="@drawable/chat_send_btn"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/et_sendmessage6" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/dl_bottom2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_weight="0.05">
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
         <TextView
             android:id="@+id/btn_send7"
             android:layout_width="120dp"
@@ -290,4 +299,6 @@
         android:textColor="#ffffff"
         android:textSize="20dp"
         android:onClick="welcome_denglu" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
